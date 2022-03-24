@@ -1,0 +1,13 @@
+//подключаеим классы из текущей папки
+@import "layout";
+@import "header";
+@import "footer";
+//подключаем импортированные классы
+@import "./blocks/wrapper/wrapper";
+@import "./blocks/header/header";
+//@import "nav/nav";
+//@import "main/main";
+//@import "article/article";
+//@import "aside/aside";
+//@import "section/section";
+@import "./blocks/footer/footer";

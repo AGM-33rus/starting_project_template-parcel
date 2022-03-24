@@ -1,0 +1,47 @@
+{
+  "name": "starting_project_template-parcel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "targets": {
+    "main": false
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "bemtree": "bemtree-from-html",
+    "clean": "rm -rf dist/*",
+    "build": "parcel build",
+    "start": "npm run clean && parcel"
+  },
+  "bemtree": {
+    "from": "./src/**/!(_|temp)*.html",
+    "to": "src/scss/globals/blocks",
+    "js": "src/js/blocks.js",
+    "omit": "@@,js-,active,col,row"
+  },
+  "author": "agm-33rus",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "autoprefixer": "^10.4.2",
+    "bem-folders-creator": "^0.1.2",
+    "bemtree-from-html": "^1.0.9",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "parcel": "latest",
+    "prettier": "2.5.1",
+    "prettier-config-standard": "^4.0.0",
+    "sass-bem": "^2.6.5",
+    "stylelint-config-standard": "^24.0.0"
+  },
+  "keywords": [],
+  "description": "@ СТАРТОВЫЙ ШАБЛОН с использованинм Parcel2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGM-33rus/starting_project_template-parcel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AGM-33rus/starting_project_template-parcel/issues"
+  },
+  "homepage": "https://github.com/AGM-33rus/starting_project_template-parcel#readme"
+}
